@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "/controllers/index.ts",
-      "use": "@now/node"
+      "src": "controllers/index.ts",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/controllers/(.*)",
-      "dest": "index.ts"
+      "src": "/(.*)",
+      "dest": "/controllers/index.ts"
     }
   ]
 }
