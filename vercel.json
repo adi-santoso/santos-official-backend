@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "controllers/index.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "controllers/(.*)",
+      "dest": "index.js"
+    }
+  ]
+}

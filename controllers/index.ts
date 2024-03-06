@@ -9,4 +9,10 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
-export default app;
+app.get('/testing', (req, res) => {
+    res.send('Hiya');
+});
+
+app.listen(3000, () => console.log('🚀 Server ready at: http://localhost:3000'));
+
+module.exports = app;
