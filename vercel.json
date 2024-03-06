@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "controllers/index.js",
+      "src": "controllers/index.ts",
       "use": "@now/node"
     }
   ],
